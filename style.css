@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(182, 182, 182);
+}
+
+.container{
+    background-color: rgb(182, 179, 179);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 5px 5px 5px;
+}
+
+.nav {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.main-container {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#text-area {
+    width: 100%;
+}
+
+c
