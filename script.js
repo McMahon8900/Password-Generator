@@ -18,6 +18,8 @@ console.log(password(12,num));
 //console log works to generate random symbols
 console.log(password(12,sym));
 
+
+
 // cannot get the code correct for it to display
 
 generatePassword.addEventListener("click", function(e){
