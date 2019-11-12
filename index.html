@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-  </head>
-  <body>
-    <header>
-      <h1>Password Generator</h1>
-    </header>
-    <h2>Generate a Password</h2>
-    <textarea
-      readonly
-      id="password"
-      placeholder="Your Secure Password"
-      aria-label="Generated Password"
-    ></textarea>
-    <button id="generate">Generate Password</button>
-    <button id="copy">
-      Copy to Clipboard
-    </button>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+    </nav>
+    <div class="main-container">
+      <h2>Generate a Password</h2>
+      Your Password: <input type="text" id="your password" size="60" />
+      <div id="text-area">
+        <!--<textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password">
+             </textarea>-->
+        <br>
+        How many characters? <input type="number" id="charNum" value="128" min="8" mx="100" />
+        <br>
+        Number: <input type="checkbox" id=num />
+        Symbols: <input type="checkbox" id=symbol />
+        <br>
+      </div>
+      <br>
+      <button id="generate">Generate Password</button>
+      <p id="length"></p>
+
+      <button id="copy">
+        Copy to Clipboard
+      </button>
+    </div>
+  </div>
+</body>
+
 </html>
