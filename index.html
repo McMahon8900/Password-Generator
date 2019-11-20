@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="script.js"></script>
 
 </head>
 
@@ -23,26 +22,27 @@
     </nav>
     <div class="main-container">
       <h2>Generate a Password</h2>
-      Your Password: <input type="text" id="your password" size="60" />
-      <div id="text-area">
-        <!--<textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password">
-             </textarea>-->
-        <br>
-        How many characters? <input type="number" id="charNum" value="128" min="8" mx="100" />
-        <br>
-        Number: <input type="checkbox" id=num />
-        Symbols: <input type="checkbox" id=symbol />
-        <br>
-      </div>
+      Your Password: <input type="text" id="your_password" />
       <br>
-      <button id="generate">Generate Password</button>
-      <p id="length"></p>
-
-      <button id="copy">
-        Copy to Clipboard
-      </button>
+      <br>
+      How many characters? 8 min - 128 max: <input type="number" id="charNum" value="128" min="8" mx="100" />
+      <br>
+      Number: <input type="checkbox" id=num />
+      Symbols: <input type="checkbox" id=sym />
+      <br>
     </div>
+    <br>
+    <button id="generate_password">
+      Generate Password
+    </button>
+    <p id="length"></p>
+
+    <button id="copy">
+      Copy to Clipboard
+    </button>
   </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
